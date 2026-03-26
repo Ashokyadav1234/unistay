@@ -1,0 +1,2828 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="Unistays" />
+      <title>Unistays</title>
+      <meta name="description" content="unistays" />
+      <title>unistays</title>
+      <link rel="shortcut icon" href="https://www.unistays.co//assets/home_new/img/favicon.png" type="image/x-icon" />
+      <link href="https://www.unistays.co//assets/home_new/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="https://www.unistays.co//assets/home_new/css/style.css" rel="stylesheet" />
+      <link href="https://www.unistays.co//assets/home_new/css/slick.min.css" rel="stylesheet" />
+      <link href="https://www.unistays.co//assets/home_new/css/slick-theme.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://www.unistays.co/common/new_front_ui/css/daterangepicker.css" rel="stylesheet">
+      <link href="https://www.unistays.co/assets/css/app.css" rel="stylesheet">
+      <style>
+         .types img{
+         border: 2px solid #fff;
+         border-radius: 10px;
+         }
+         .mob-types-carousel img{
+         border: 2px solid #fff;
+         border-radius: 10px;
+         }
+         .type-of-div img{
+         border: 2px solid #fff;
+         border-radius: 10px;
+         }
+         .slick-slide {
+         margin: 0px;
+         }
+         .slick-slide img {
+         width: 100%;
+         object-fit: cover;
+         }
+         .wrapper .slick-dots li button:before {
+         font-size: 20px;
+         color: white;
+         }
+         .slick-prev:before,
+         .slick-next:before {
+         font-family: "slick";
+         font-size: 40px;
+         line-height: 1;
+         opacity: 0.75;
+         color: #18a262;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+         }
+         .slick-prev,
+         .slick-next {
+         font-size: 0;
+         line-height: 0;
+         position: absolute;
+         top: 45%;
+         display: block;
+         width: 50px;
+         height: 50px;
+         margin-top: -50px;
+         padding: 0;
+         border: 0;
+         outline: 0;
+         }
+         .slick-prev {
+         left: -5px;
+         z-index: 999;
+         }
+         .slick-next {
+         right: -5px;
+         z-index: 999;
+         }
+         .title h4{
+         font-size: 1.2rem;
+         font-weight: 600;
+         }
+         .mobile-only-bnr .slick-slide img{
+         width: 100% !important;
+         }
+         .input-group>.form-control{
+         padding: 10px 0px 10px 35px;
+         }
+         .srch{
+         width: 520px;
+         margin-left: -130px;
+         position: relative;
+         } 
+         .slick-slide {
+         max-width: 100%;
+         }
+         .easy-autocomplete-container {
+         left: 0;
+         /*position: absolute;*/
+         width: 100%;
+         z-index: 2;
+         background: #fff;
+         padding: 0px 10px;
+         border-radius: 10px;
+         }
+         .easy-autocomplete {
+         width: 100% !important;
+         }
+         .easy-autocomplete-container ul {
+         /* 
+         background: rgb(237, 236, 236);
+         */
+         position: absolute;
+         background: #fff;
+         min-width: 100%;
+         display: none;
+         padding: 0;
+         top: 100%;
+         list-style-type: none;
+         box-shadow: 0px 1px 4px #666;
+         border-radius: 0 0 5px 5px;
+         left: 0;
+         z-index: 9;
+         }
+         body .easy-autocomplete-container ul li {
+         margin-bottom: 0;
+         border-bottom: 0px solid #d1d1d1;
+         cursor: pointer;
+         padding: 10px 15px;
+         }
+         body .easy-autocomplete-container ul li:hover{
+         background: #f6f6f6;
+         color: #18a262;
+         }
+         .search-sec .campCity{
+         height:43px;
+         }
+         .digit {
+         width: 50px;
+         height: 50px;
+         margin: 0px;
+         text-align: center;
+         font-size: 20px;
+         color: #000;
+         border-color: #dcdcdcfc;
+         border-width: 1px;
+         border-radius: 5px;
+         border-style: solid;
+         outline-color: #040404bb;
+         transition: 0.3s transform;
+         }
+         .digit:focus {
+         transform: scale(1.3);
+         transition: 0.1s;
+         }
+         #verificationButton {
+         width: 100px;
+         height: 50px;
+         margin: 5px;
+         text-align: center;
+         font-size: 20px;
+         background-color: #ffffff;
+         color: transparent;
+         box-shadow: 0px 2px 5px -2px #f50000ce;
+         text-shadow: 0 0 0 #040404bb;
+         border-color: #dcdcdcfc;
+         border-width: 1px;
+         border-radius: 5px;
+         border-style: solid;
+         outline-color: #ff0000bb;
+         }
+         #verificationButton:hover {
+         border: solid 2px #000000ce;
+         width: 110px;
+         height: 60px;
+         cursor: pointer;
+         /* transform: scale(0.1); */
+         transform: scale(1);
+         transition: 0.1s;
+         }
+         #digitsContainer {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         }
+
+        .textDecoration {
+            text-decoration: none !important;
+            color: #000 !important;
+        }
+
+        .textDecoration_white {
+            text-decoration: none !important;
+            color: #FFF !important;
+        }
+        
+       
+      </style>
+   </head>
+   <body>
+      
+       <div id="loading">
+          <img id="loading-image"  width="450px" height="450px" src="https://www.unistays.co//assets/home_new/img/loader-new.svg" alt="Loading..." />
+    </div> 
+       
+
+      <nav id="navbar" class="navbar navbar-expand-sm sticky-top navbar-light desktop-nav">
+         <div class="container navmargin">
+            <a href="https://www.unistays.co/" class="white-logo"><img src="https://www.unistays.co//assets/home_new/img/logo-new.png" style="width: 50%"></a>
+            <a href="https://www.unistays.co/" class="color-logo"><img src="https://www.unistays.co//assets/home_new/img/logo.png" style="width: 50%"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                     <form id="form_search_top" class="srch hidden_search" method="get" action="https://www.unistays.co/camp_list">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search Location, State, Property" name="serch_location" class="campCityTop">
+                        <input type="hidden" id="serch_location" class="serch_location serch_location4" value="" data-id="4">
+                     </form>
+                  </li>
+               </ul>
+               <ul class="navbar-nav ml-auto user-dropdown">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="https://www.unistays.co/camp_list">Discover Hub</a>
+                  </li>
+                                    <li class="nav-item active">
+                     <a class="nav-link" id="head_login"  data-toggle="modal" data-target="#login-modal">Login</a>
+                  </li>
+                                 </ul>
+            </div>
+         </div>
+      </nav>
+
+      
+      <nav id="navbar" class="navbar navbar-expand-sm sticky-top navbar-light mob-nav back ">
+         <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="modal" data-target="#mobile-menu">
+            <span class="fa fa-bars"></span>
+            </button>
+            <a href="https://www.unistays.co/" class="white-logo"><img src="https://www.unistays.co//assets/home_new/img/logo.png" style="width: 50%" class="logo-mob"></a>
+            <a href="https://www.unistays.co/" class="color-logo"><img src="https://www.unistays.co//assets/home_new/img/logo.png" style="width: 50%" class="logo-mob"></a>
+          <a class="use-app-marg" href="https://play.google.com/store/apps/details?id=com.wowadestinations.unistays">  <span class="useapp">Use App</span></a>
+             <a class="d-none" href="" data-toggle="modal" data-target="#SearchModal"><i class="fa fa-search d-none"></i></a>
+            <div class="collapse navbar-collapse" id="navbar1">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="https://www.unistays.co/camp_list">Discover Hub</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="https://www.unistays.co/login">Login</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      
+      <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="srchModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pad0">
+                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>-->
+                        </div>
+                        <div class="modal-body">
+                            <form class="mob-search" method="get" action="https://www.unistays.co/camp_list">
+                                <input type="text" placeholder="Search Location, State" name="serch_location" value="" /> <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <div class="modal fade" id="mobile-menu" tabindex="-1" role="dialog" aria-labelledby="srchModalLabel" aria-hidden="true">
+         <div class="modal-dialog fullscrn-1" role="document">
+            <div class="modal-content fullscrn-2">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin: 0px">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <h4 class="text-capitalize">Hello,  Guest </h4>
+                  <div>
+                     <ul class="mobile-menu-modal">
+                                                <li><a data-toggle="modal" data-target="#login-modal"><i class="fa fa-user"></i> Login/Signup</a></li>
+                        <li><a href="https://www.unistays.co/camp_list"><i class="fa fa-search"></i> Discover hub</a></li>
+                        <li><a href="https://www.unistays.co/host_your_camp"><i class="fa fa-home"></i> Host your property</a></li>
+                        <li><a href="https://www.unistays.co/help"><i class="fa fa-phone"></i> Help</a></li>
+                                             </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="srchModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal450 mob-fullscrn-1 appends" role="document">
+            <div class="modal-content mob-fullscrn-2 border-none">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin: 0px">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h6 class="modal-title marl">Log in or sign up</h6>
+               </div>
+               <hr class="mtb1">
+               <div class="modal-body loginModalBody">
+                  <div class="login-cont">
+                     <img class="d-block m-auto" src="https://www.unistays.co/assets/img/camp-hub-icn.png" style="width: 10%">
+                     <h6 class="txt-cntr mt20"> Welcome to unistays!</h6>
+                     <p class="txt-cntr  fnt-14">Unique experience in every stay, We are the first dedicated unique stay booking platform in the world. </p>
+                     <div class="form_alter" id="form_alter">
+                        <form action="https://www.unistays.co/loginCheck" id="camp-login-form" method="post" accept-charset="utf-8">
+ 
+                        <div class="form-group row login-input-border">
+                           <label for="inputNumber" class="col-3 col-sm-3 col-form-label login-input-bg">
+                              <p class="login-p1">Country/Region</p>
+                              <p class="login-p2">India (+91)</p>
+                           </label>
+                           <div class="col-9 col-sm-9">
+                              <input type="text" class="form-control login-input-field mobile pl0" name="mobile" id="mobile" placeholder="Phone number" onkeypress="return isNumber(event)">
+                           </div>
+                        </div>
+                        <div id="mobile_error" style="width: 100%;text-align: left;color: red;font-size: 12px;margin-top: 10px"></div>
+                        <div id="invalid" style="width: 100%;text-align: left;color: red;font-size: 12px;margin-top: 10px"></div>
+                        <div class="row">
+                           <button type="submit" class="login-modal-btn">Continue</button>
+                           <!--<a href="" data-dismiss="modal" data-toggle="modal" data-target="#otp-modal" class="login-modal-btn"></a>-->
+                        </div>
+                        </form>                          <div class="row" style="margin-top:15px;">
+                        <a href="JavaScript:Void(0)" onclick="golo();" id="googleLogin" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Login with Google</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="only-mobile-view row">
+            <img src="img/Log%20in%20-%20Mobile%20bg1.png" class="img-max">
+         </div>
+      </div>
+      <div class="modal fade" id="otp-modal" tabindex="-1" role="dialog" aria-labelledby="srchModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal450 mob-fullscrn-1" role="document">
+            <div class="modal-content mob-fullscrn-2 border-none">
+               <div class="modal-header border-none">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0px; margin: 0px">
+                  <h6 class="modal-title marl">Confirm your Number</h6>
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="only-mobile-view row">
+                     <img src="img/logo.png" class="menu-logo-mobile">
+                     <hr>
+                  </div>
+                  <div class="only-desk-view container">
+                     <button type="button" class="close" data-dismiss="modal" data-toggle="modal" data-target="#login-modal" style="padding: 0px; margin: 0px;float: left;">
+                     <i class="fa fa-angle-left"></i>
+                     </button>
+                     <h6 class="modal-title marl txt-cntr">Confirm your number</h6>
+                  </div>
+               </div>
+               <hr>
+               <div class="modal-body">
+                  <div class="login-cont">
+                     <p class="txt-cntr">Enter the code we've sent via SMS to +1234566 </p>
+                     <div id="digitsContainer">
+                        <form id="codeverifyForm">
+                           <div id="inputs">
+                              <input type="text" class="digit" id="verificationCodeDigit1" minlength="1" maxlength="1" required>
+                              <input type="text" class="digit" id="verificationCodeDigit2" minlength="1" maxlength="1" required>
+                              <input type="text" class="digit" id="verificationCodeDigit3" minlength="1" maxlength="1" required>
+                              <input type="text" class="digit" id="verificationCodeDigit4" minlength="1" maxlength="1" required>
+                              <input type="text" class="digit" id="verificationCodeDigit5" minlength="1" maxlength="1" required>
+                           </div>
+                        </form>
+                     </div>
+                    
+                     <div class="row">
+                        <a href="" data-toggle="modal" data-target="#otp-modal" class="login-verify-btn">Verify</a>
+                     </div>
+                     <p class="txt-cntr mt10">Not received your code ? <a href="#"><u>Resend code</u></a> </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="only-mobile-view row">
+            <img src="img/Log%20in%20-%20Mobile%20OTP%20bg.png" class="img-max">
+         </div>
+      </div>
+      <script>
+          function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+
+function golo(){
+    
+    $.ajax({
+                    type: 'GET',
+                    url: site_url+'GoogleLogin/google_login',
+                    dataType: "json",
+                    async: false,
+                    headers: {  
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') 
+                    },
+                    data : {'glogin':true} ,
+                    success: function(response)
+                    { 
+                        var obj =  $.parseJSON(JSON.stringify(response)); 
+                        if(obj.refresh){ 
+                            window.location.href = obj.refresh; 
+                        }  
+                    },  
+                    error: function (request, textStatus, errorThrown)  {  
+                        $.validator.messages.chkEmail='Somthing went wrong.'; 
+                    }
+                });
+    
+    
+}
+        
+      </script>
+      
+      <style>
+          
+          .loginModalBody{
+    background: white;
+}
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+ 
+ @media only screen and (max-width: 600px) {
+  #loading {
+    width: 100%;
+    height:100%;
+  }
+ #loading-image {
+     width:25%;
+     height:25%;
+ }
+}
+
+
+}
+
+      </style><style type="text/css">
+    .property-box .detail .title {
+       font-size: 18px;
+    }
+    .list-section-price .camp-price .discount
+    {
+        font-size:15px;
+    }
+    .list-section-price .camp-price .original-price
+    {
+        font-size: 15px;
+    }
+    .slider_location {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .property-box .detail {
+        padding: 20px 20px 0px 20px;
+    }
+    @media (max-width: 575px)
+    {
+        a.grid_item figure {
+            height: auto !important;
+           
+        }
+        .desktopText {
+            display: none !important;
+        }
+        .loc_icon_custom {
+            margin-top: 2px;
+        }
+    }
+    @media (max-width: 767px)
+    {
+        a.grid_item figure {
+            height: 225px!important;
+        }
+    }
+    .fa-info-circle {
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+
+
+.added_wishlist {
+    color: red;
+}
+.srch-icn {
+    margin-top:1px;
+}
+
+
+.slick-next{
+ display: none;
+} 
+.slick-prev {
+   display: none; 
+}
+.slick-prev slick-arrow-buton {
+    display: none;
+}
+
+.textDecoration {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.textDecoration_black {
+            text-decoration: none !important;
+            color: #000 !important;
+         }
+
+.type-of-div-custom-size {
+    height: 120px;
+    width: 175px;
+}
+
+.type-of-div-custom-mob-size {
+    height: 100px;
+}
+
+.disabled-custom{
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.ucFirst {
+    text-transform: capitalize;
+}
+.mobile-sub-category {
+            padding-top: 25px;
+            padding-bottom: 0px;
+        }
+</style>
+<div id="page">
+          
+            <main>
+                <section class="cover-img">
+                    <div class="container">
+                        <div class="aligned-center">
+                            <h3 class="cover-title">Move your feet to something <strong>UNIQUE</strong></h3>
+                            <!--<p class="cover-para">Your plan and our execution makes the perfect vacation</p>-->
+                            <span class="d-none" name="testpath">/home2/viani8tr/unistays.co/</span>
+                            <form id="form_search" method="get" action="https://www.unistays.co/camp_list">
+                                <div class="input-group">
+                                    <input type="text" class="form-control brdr-rds campCity" name="serch_location" placeholder="Location, Property" id="campCity" style="width: 100% !important;padding: 10px 0px 10px 35px;" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-secondary srch-icn" type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="serch_location" class="serch_location"  data-id="1">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!--<div class="mobilebnr"><img src="https://www.unistays.co//assets/home_new/img/Cover-photo.jpg" class="img-max" /></div>-->
+                <div class="input-group mobile-search mt-15 resp-margin">
+                    <input type="text" class="form-control brdr-rds campCity campCityMobile" placeholder="Location, Property" style="line-height: 30px;"/>
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary srch-icn" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                    <input type="hidden" name="serch_location" id="serch_location_mobile" class="serch_location_mobile" value="" data-id="2">
+                </div>
+                 <div class="mobile-sub-category d-block d-sm-none">
+                       <div class="sub-category-item">
+                           <a href="https://www.unistays.co//camp_list?stay=Unique Stay">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Uniquestays.jpg">
+                    </a>
+                </div>
+                  <div class="sub-category-item">
+                      <a href="https://www.unistays.co//camp_list?stay=Glamping">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Glamping.jpg">
+                    </a>
+                </div>
+                   <div class="sub-category-item">
+                        <a href="https://www.unistays.co//camp_list?stay=Villa">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Villas.jpg">
+                    </a>
+                </div>
+                 <div class="sub-category-item">
+                      <a href="https://www.unistays.co//camp_list?stay=Botique Home">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/BoutiqueHomes.jpg">
+                    </a>
+                </div>
+                  <div class="sub-category-item">
+                       <a href="https://www.unistays.co//camp_list?stay=Farm House">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/FarmHouse.jpg">
+                    </a>
+                </div>
+              
+                <div class="sub-category-item">
+                     <a href="https://www.unistays.co//camp_list?stay=Heritage">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Heritage.jpg">
+                    </a>
+                </div>
+                  <div class="sub-category-item">
+                       <a href="https://www.unistays.co//camp_list?stay=Camping">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Camping.jpg">
+                    </a>
+                </div>
+                <div class="sub-category-item">
+                     <a href="https://www.unistays.co//camp_list?parameter=caravan">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Caravan.jpg">
+                    </a>
+                </div>
+                <div class="sub-category-item">
+                     <a href="https://www.unistays.co//camp_list?parameter=events">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Events.jpg">
+                    </a>
+                </div>
+                <div class="sub-category-item">
+                     <a href="https://www.unistays.co//camp_list?parameter=adventure">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Adventure.jpg">
+                    </a>
+                </div>
+               
+              
+                 <div class="sub-category-item">
+                      <a href="https://www.unistays.co//camp_list?parameter=package">
+                    <img src="https://www.unistays.co//assets/home_new/img/sub-category/Tourpackages.jpg">
+                    </a>
+                </div>
+               
+               
+              
+            </div>
+                <section class="types">
+                    <div class="container no-pad">
+                        
+                        <div class="dsktp">
+                            <div class="row flex-space-around types-carousel">
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Unique Stay" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/1-Unique-stay.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Glamping" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/2-glamping.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Villa" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/3-villa.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Botique Home" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/4-boutique-homes.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Farm House" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/5-farm-houses.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Heritage" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/6-Heritage.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?stay=Camping" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/7-camping.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?parameter=caravan" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/8-Caravan.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?parameter=events" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/9-events.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?parameter=adventure" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/10-Adventure.png" class="img-max-al" /></a></div>
+                                <div class="col-md-2 pad0"><a href="https://www.unistays.co/camp_list?parameter=package" class="textDecoration_black"><img src="https://www.unistays.co//assets/home_new/img/types/11-Packages.png" class="img-max-al" /></a></div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </section>
+                <!--<section class="bnr-hom">-->
+                <!--    <div class="container no-pad">-->
+                <!--        <div class="desktop-only">-->
+                <!--            <div class="row flex-justify">-->
+                <!--                <div class="col-md-6"><img src="https://www.unistays.co//assets/home_new/img/hombnr1.png" class="img-max" /></div>-->
+                <!--                <div class="col-md-6"><img src="https://www.unistays.co//assets/home_new/img/hombnr2.png" class="img-max" /></div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--        <div class="mobile-only-bnr">-->
+                <!--            <div><img src="https://www.unistays.co//assets/home_new/img/hombnr1.png" class="img-max" /></div>-->
+                <!--            <div><img src="https://www.unistays.co//assets/home_new/img/hombnr2.png" class="img-max" /></div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</section>-->
+                
+                            
+            <!-- CAMP 123 -->        
+                <section class="camping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Unique Stay</h4></div>
+                        <script id="unique-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row camping-carousel">
+                            <div class="col-md-12 padrl">
+                                <div class="camping-div">
+                                    <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a><button class="btn-feature btn-unique-stays disabled-custom">{{camp_type_name}}</button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}} {{#ifnoteq isWishlisted 0}}added_wishlist{{/ifnoteq}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                        
+                                        
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                        
+                                        
+                                        <!-- <strike class="strike">₹ {{CampMinOrginalPrice}}</strike> -->
+                                    </div>
+                                    
+                                    
+                                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-unique" id="uniqueCampsList">
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- CLOSE CAMP -->
+
+            <!----------------- GLAMBING  ---------------->
+                <section class="glamping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Glamping</h4></div>
+                        <script id="glambing-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row glamping-carousel">
+                            <div class="col-md-12 padrl">
+                                    <div class="glamping-div"> 
+                                        <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a> <button class="btn-feature btn-glamping disabled-custom">{{camp_type_name}} </button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}} {{#ifnoteq isWishlisted 0}}added_wishlist{{/ifnoteq}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                         
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-glambing" id="glambingsList">
+                            </div>
+                            <!-- <div class="slick-prev slick-arrow-buton">
+                                <img class="a-left control-c prev slick-prev slick-arrow" src="img/icons/arrow-left.png" style="">
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <img class="a-right control-c next slick-next slick-arrow" src="img/icons/arrow-right.png" style="">
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+           <!-------------------- close ---------------->
+
+            
+            
+             <!-- CAMP 123 -->        
+                <section class="camping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Villa</h4></div>
+                        <script id="villa-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row camping-carousel">
+                            <div class="col-md-12 padrl">
+                                <div class="camping-div">
+                                    <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a><button class="btn-feature btn-villa disabled-custom">{{camp_type_name}}</button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}} {{#ifnoteq isWishlisted 0}}added_wishlist{{/ifnoteq}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                          
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-villa" id="villaCampsList">
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- CLOSE CAMP -->
+            
+
+            
+            
+             <!-- CAMP 123 -->        
+                <section class="camping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Boutique Homes</h4></div>
+                        <script id="boutiquehome-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row camping-carousel">
+                            <div class="col-md-12 padrl">
+                                <div class="camping-div">
+                                    <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a><button class="btn-feature btn-boutiquehome disabled-custom">{{camp_type_name}}</button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}} {{#ifnoteq isWishlisted 0}}added_wishlist{{/ifnoteq}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                          
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-boutiquehome" id="boutiquehomeCampsList">
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- CLOSE CAMP -->
+            
+            
+            <!-- CAMP 123 -->        
+                <section class="camping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Farm House</h4></div>
+                        <script id="farmhouse-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row camping-carousel">
+                            <div class="col-md-12 padrl">
+                                <div class="camping-div">
+                                    <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a><button class="btn-feature btn-farmhouse disabled-custom">{{camp_type_name}}</button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}} {{#ifnoteq isWishlisted 0}}added_wishlist{{/ifnoteq}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                          
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-farmhouse" id="farmhouseCampsList">
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- CLOSE CAMP -->
+            
+            
+              <!-- CAMP 123 -->        
+                <section class="camping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Heritage</h4></div>
+                        <script id="heritage-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row camping-carousel">
+                            <div class="col-md-12 padrl">
+                                <div class="camping-div">
+                                    <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a><button class="btn-feature btn-heritage disabled-custom">{{camp_type_name}}</button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}} {{#ifnoteq isWishlisted 0}}added_wishlist{{/ifnoteq}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                          
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-heritage" id="heritageCampsList">
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- CLOSE CAMP -->
+            
+            
+            <!-- CAMP 123 -->        
+                <section class="camping">
+                    <div class="container no-pad">
+                       <div class="title"><h4>Camping</h4></div>
+                        <script id="expressions-template" type="text/x-handlebars-template">
+                        {{#each this}}
+                        <div class="row camping-carousel">
+                            <div class="col-md-12 padrl">
+                                <div class="camping-div">
+                                    <a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">
+                                        <img src="https://www.unistays.co/{{cImagePath}}" width="268" height="268"/></a><button class="btn-feature btn-camping disabled-custom">{{camp_type_name}}</button> <span class="wishlist-icn slider-wish-list add_wishlist wish_camp_{{nCampId}}" data-wid="{{nCampId}}"><i class="fa fa-heart"></i></span>
+                                    </div> 
+                                <div class="container info">
+                                    <div class="row">
+                                        <h5><a href="https://www.unistays.co/camp_details?id={{nCampId}}" class="property-img textDecoration">{{ trimString cCampName}}</a></h5>
+                                        <span class="rating"><i class="fa fa-star"></i> 4.5</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="loc ucFirst">{{cityName}}</span>   
+                                    </div>
+                                    <div class="row pricing" >
+                                          
+                                          {{#ifEquals isRoom "1"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Room</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                         
+                                         {{#ifEquals isRoom "0"}}
+                                        
+                                        <h5 style="font-size:14px;"><strong>₹ {{#if [defaultPrice].[defaultPrice]}} {{ round [defaultPrice].[defaultPrice]}} {{else}}{{ round campMinPrice}}{{/if}}/</strong> <span style="color: #000000a6;">Per Person</span></h5>
+                                        
+                                        
+                                         {{/ifEquals}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    </script>
+                    <div class="container-fluid">
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-featured" id="featuredCampsList">
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- CLOSE CAMP -->
+            
+            
+                
+                <section class="type-of-stays">
+                    <div class="container no-pad">
+                        <div class="title"><h4>Type of Stays</h4></div>
+                        <div class="row desktop-only">
+                            <div class="col-md-2 padrl">
+                                <a href="https://www.unistays.co/camp_list?campTypes=11" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                        <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/tree-house.jpg" class="img-max type-of-div-custom-size" />
+                                        <h5>Treehouse</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-2 padrl">
+                                <a href="https://www.unistays.co/camp_list?campTypes=19,32" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/mud-house.jpg" class="img-max type-of-div-custom-size" />
+                                        <h5>Mud House</h5>
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="col-md-2 padrl">
+                                <a href="https://www.unistays.co/camp_list?campTypes=16" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/a-frame.jpg" class="img-max type-of-div-custom-size" />
+                                        <h5>A Frame</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-2 padrl">
+                                <a href="https://www.unistays.co/camp_list?campTypes=6" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/luxury-tent.jpg" class="img-max type-of-div-custom-size" />
+                                        <h5>Luxury Tent</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-2 padrl">
+                                <a href="https://www.unistays.co/camp_list?campTypes=23" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/wooden-cottage.jpg" class="img-max type-of-div-custom-size" />
+                                        <h5>Wooden Cottage</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-2 padrl">
+                                <a href="https://www.unistays.co/camp_list?campAmnities=41" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/swimming-pool.jpg" class="img-max type-of-div-custom-size" />
+                                        <h5>Swimming Pool</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mobile-only-type-of">
+                            <div>
+                                <a href="https://www.unistays.co/camp_list?campTypes=11" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/tree-house.jpg" class="img-max type-of-div-custom-mob-size" />
+                                        <h5>Treehouse</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.unistays.co/camp_list?campTypes=19,32" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/mud-house.jpg" class="img-max type-of-div-custom-mob-size" />
+                                        <h5>Mud House</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.unistays.co/camp_list?campTypes=16" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/a-frame.jpg" class="img-max type-of-div-custom-mob-size" />
+                                        <h5>A Frame</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.unistays.co/camp_list?campTypes=6" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/luxury-tent.jpg" class="img-max type-of-div-custom-mob-size" />
+                                        <h5>Luxury Tent</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                            <a href="https://www.unistays.co/camp_list?campTypes=23" class="textDecoration_black">
+                                <div class="type-of-div">
+                                <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/wooden-cottage.jpg" class="img-max type-of-div-custom-mob-size" />
+                                    <h5>Wooden Cottage</h5>
+                                </div>
+                            </a>
+                            </div>
+                            <div>
+                                <a href="https://www.unistays.co/camp_list?campAmnities=41" class="textDecoration_black">
+                                    <div class="type-of-div">
+                                    <img src="https://www.unistays.co/assets/home_new/img/type-of-stays/swimming-pool.jpg" class="img-max type-of-div-custom-mob-size" />
+                                        <h5>Swimming Pool</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="locations">
+                    <div class="container no-pad">
+                        <div class="title"><h4>Locations</h4></div>
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Wayanad" class="textDecoration_black">
+                                    <div class="row">
+                                        <img src="https://www.unistays.co/assets/home_new/img/locations/wayanad.jpg" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Wayanad</h6>
+                                            <p>Kerala</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Kodaikanal" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/Kodai.jpg" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Kodaikanal</h6>
+                                            <p>Tamilnadu</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="col-6 col-md-3">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Coorg" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/Coorg.jpg" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Coorg</h6>
+                                            <p>Karnataka</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                           
+                             <div class="col-6 col-md-3">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Lonavala" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/lonavala.jpg" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Lonavala</h6>
+                                            <p>Maharashtra</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                             <div class="col-6 col-md-3">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Manali" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/Manali.webp" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Manali</h6>
+                                            <p>Himachal Pradesh</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="col-6 col-md-3">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Goa" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/Goa.jfif" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Goa</h6>
+                                            <p>Goa</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="col-6 col-md-3 d-none d-sm-block">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Jaisalmer" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/jaisalmer.jpg" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Jaisalmer</h6>
+                                            <p>Rajasthan</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="col-6 col-md-3 d-none d-sm-block">
+                                <a href="https://www.unistays.co/camp_list?serch_location=Munnar" class="textDecoration_black">
+                                    <div class="row">
+                                    <img src="https://www.unistays.co/assets/home_new/img/locations/Munnar.jpg" class="img-max" />
+                                        <div class="locations-dtl">
+                                            <h6 class="mb0">Munnar</h6>
+                                            <p>Kerala</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                 <!--<section class="home-events">
+                    <div class="container no-pad">
+                        <div class="title"><h4>Events</h4></div>
+                            <script id="trending-events-template" type="text/x-handlebars-template">
+                            {{#each this}}
+                            <a href="events/details?id={{eventId}}" style="text-decoration:none" class="property-img textDecoration">
+                            <div class="col-md-12 col-4-REMOVE_THIS_CLASS mob-pb padrl">
+                                <img src="https://www.unistays.co/{{image_path}}" alt="Image" alt="" class="img-max" style="border-top-right-radius: 5px;border-top-left-radius: 5px; width=345px height=233px">
+                                <div class="mt-auto event-footer row">
+                                    <p class="flt-left">01/01/2021</p>
+                                    <p class="flt-right">{{number_of_days}}D/{{number_of_nights}}</p>
+                                </div>
+                                <div>
+                                    <h6 class="event-head" style="text-decoration: none;">{{event_name}}</h6>
+                                    <p class="event-loc">{{location}}</p>
+                                </div>
+                                <div class="event-pricing">
+                                    <div class="event-price-btn">₹ {{discountPrice}}</div>
+                                    <p class="event-striked-price">₹ {{orginalPrice}}</p>
+                                    <span class="cat_star mob-str" style="font-size: 8px; margin-top: 8px;margin-left: auto;">
+                                        <i class="fa fa-star gld"></i><i class="fa fa-star gld"></i><i class="fa fa-star gld"></i><i class="fa fa-star gld"></i><i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                            {{/each}}
+                        </script>
+                    <div class="container-fluid"> 
+                        <div class="slick-slider-area">
+                            <div class="row slick-carousel-trending" id="trendingCampsList">
+                                
+                            </div>
+                            <div class="slick-prev slick-arrow-buton">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="slick-next slick-arrow-buton">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+                
+                <!--  package new -->
+                <div id="package-module-append"></div>
+                <!-- Close pack -->
+
+                <!--  adventure new -->
+                <div id="adventure-module-append"></div>
+                <!-- Close pack -->
+
+                <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="srchModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header pad0">
+                                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                            </div>
+                            <div class="modal-body">
+                                <form class="mob-search" action="">
+                                    <input type="text" placeholder="Search Location, State" name="search" id="campCity" class="campCity">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                                    <input type="hidden" name="serch_location" id="serch_location" class="serch_location" value="" data-id="3">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div><style>
+        .review-2-head {
+            font-size: 16px;
+            font-weight: 700;
+            padding-top: 15px;
+            padding-bottom: 40px;
+        }
+
+        .review-left-side img {
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+        }
+
+        .review-left-side {
+            padding-bottom: 50px;
+            border-right: 1px solid #f4f4f4
+        }
+
+        .review-center-div h5 {
+            text-align: center;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+
+        .review-center-div p {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .review-rating {
+            font-size: 35px;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .review-rating .fa-star {
+            font-size: 35px;
+            padding: 5px;
+        }
+
+        .grn {
+            color: #18a362
+        }
+
+        .review-right-side {
+            padding-bottom: 50px;
+        }
+
+        .review-right-side h5 {
+            text-align: left;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+
+        .review-right-side p {
+            text-align: left;
+            font-size: 12px;
+        }
+
+        .review-right-side .form-control {
+            border: none;
+        }
+
+        .review-right-side input {
+            border-bottom: 1px solid #ced4da !important;
+            padding-top: 30px;
+        }
+
+        .hashtags {
+            font-size: 13px;
+            border: 1px solid #000;
+            padding: 7px;
+            border-radius: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .rating-submit-button {
+            padding: 2px 35px 5px 35px;
+            border-radius: 5px;
+            color: #fff;
+            margin-left: 5px;
+            background-color: #18a262;
+            margin-top: 50px;
+            display: block;
+            text-align: center;
+            font-size: 16px;
+        }
+
+      #modalForm input[type="checkbox"]:not(:checked), 
+#modalForm input[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+#modalForm input[type="checkbox"] + label {
+  display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#modalForm input[type="checkbox"]:checked + label {
+  border: 1px solid white;
+  color: white;
+  background-color: #4aa462;
+}
+    </style>
+<div class="modal fade" id="toastModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 50%;margin: auto">
+     
+      <div class="modal-body">
+        <h5 style="text-align: center" id="toastMSG"></h5>
+          <div>
+          <a href="javascript:void(0);" data-dismiss="modal" class="payment-popup">OK</a>
+              </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<input type="hidden" id="USERID" value="">
+<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body pad0">
+                                    <div class="row no-margin">
+                                        <div class="col-md-6 review-left-side">
+                                            <h4 class="review-2-head">How was the stay?</h4>
+                                            <div class="review-center-div">
+                                                <img id="imagesrc" src="img/camping/camping2.jpg">
+                                                <form id="camp-review">
+                                                <h5 id="campname"></h5>
+                                                <p>You were last camped here</p>
+                                                <span class="review-rating">
+                                                    <!-- <i class="fa fa-star grn"></i><i class="fa fa-star grn"></i><i class="fa fa-star grn"></i><i class="fa fa-star grn"></i><i class="fa fa-star"></i> -->
+                                                    <input type="hidden"  name="camp_id"    id="rcamp_id">
+                                                    <input type="hidden"  name="bookingId" id="rbooking_id">
+                    
+                                                     <div class="ratingarea"> 
+                                                        <input type="radio" name="stars" value="5" id="5"><label for="5">☆</label> 
+                                                        <input type="radio" name="stars" value="4" id="4"><label for="4">☆</label> 
+                                                        <input type="radio" name="stars" value="3" id="3"><label for="3">☆</label> 
+                                                        <input type="radio" name="stars" value="2" id="2"><label for="2">☆</label> 
+                                                        <input type="radio" name="stars" value="1" id="1"><label for="1">☆</label> 
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 review-right-side">
+                                            <h5>What did you love?</h5>
+                                            <p>Express yourself with hashtags!</p>
+                                            <div class="review-hashtags row">
+                                                <input type="checkbox" id="check_1" class="hashtags" name="tags[]" value="Goodfood">
+                                                <label for="check_1">#Goodfood</label>
+                                                <input type="checkbox" id="check_2" class="hashtags" name="tags[]" value="Stunning">
+                                                <label for="check_2">#Stunning</label>
+                                                <input type="checkbox" id="check_3" class="hashtags" name="tags[]" value="Awesomeexperience">
+                                                <label for="check_3">#Awesomeexperience</label>
+                                                <input type="checkbox" id="check_4" class="hashtags" name="tags[]" value="Familyfriendly">
+                                                <label for="check_4">#Familyfriendly</label>
+                                                <input type="checkbox" id="check_5" class="hashtags" name="tags[]" value="Adventure">
+                                                <label for="check_5">#Adventure</label>
+                                                <input type="checkbox" id="check_6" class="hashtags" name="tags[]" value="Hospitality">
+                                                <label for="check_6">#Hospitality</label>
+                                                <input type="checkbox" id="check_7" class="hashtags" name="tags[]" value="Sunrise">
+                                                <label for="check_7">#Sunrise</label>
+                                            </div>
+                                            <h5>Express more, write a review <small>(optional)</small></h5>
+                                             <div class="comment-area"> <textarea class="form-control" name="comment" placeholder="Your opinion matters" rows="4"></textarea> </div>
+                                            <button type="submit" class="btn btn-success  px-5">Submit Rating</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+</div>
+</div>
+ <div class="modal fade" id="success" role="dialog">
+    
+  </div>
+
+<div class="modal fade" id="fail" role="dialog">
+   
+  </div>
+<footer class="page-footer font-small blue pt-4 desktop-nav">
+    <!--<div class="footer-social-icons-container" style="z-index: 3;">
+                <span class="social-links">
+                    <span class="footer-social-icons">Follow Us </span>
+                    <span class="footer-social-icons"><a href="http://www.instagram.com/camphub.in" class="textDecoration"><i class="fa fa-instagram"></i></a></span>
+                    <span class="footer-social-icons"><a href="http://www.facebook.com/camphub.in" class="textDecoration"><i class="fa fa-facebook-square"></i></a></span>
+                    <span class="footer-social-icons"><a href="https://www.twitter.com/camphubindia" class="textDecoration"><i class="fa fa-twitter-square"></i></a></span>
+                </span>
+            </div>-->
+            
+                    
+    <div class="container-fluid text-center text-md-left footer-style">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://www.unistays.co//assets/home_new/img/logo.png" class="footer-logo">
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3" />
+            <div class="col-md-2 mb-md-0 mb-3">
+
+                <ul class="list-unstyled">
+                    <li><a href="https://www.unistays.co/camp_list" class="textDecoration">Discover Hub</a></li>
+                    <li><a href="https://www.unistays.co/host_your_camp" class="textDecoration">Host Your Property</a></li>
+                    <li><a href="#!" class="textDecoration">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <h5>About</h5>
+                    </li>
+                    <li><a href="https://www.unistays.co/about"  class="textDecoration">About Unistays</a></li>
+                    <li><a href="https://www.unistays.co/help" class="textDecoration">Help</a></li>
+                </ul>
+            </div>
+            <!--<div class="col-md-2 mb-md-0 mb-3">-->
+            <!--    <ul class="list-unstyled">-->
+            <!--        <li>-->
+            <!--            <h5>Social</h5>-->
+            <!--        </li>-->
+            <!--        <li><a href="https://www.instagram.com/unistays.co" class="textDecoration"><img src="https://www.unistays.co//assets/home_new/img/instagram.svg" class="footer-svg"> Instagram</a></li>-->
+            <!--        <li><a href="http://www.facebook.com/unistays.co" class="textDecoration"><img src="https://www.unistays.co//assets/home_new/img/facebook.svg" class="footer-svg"> Facebook</a></li>-->
+            <!--        <li><a href="https://www.twitter.com/unistays.co" class="textDecoration"><img src="https://www.unistays.co//assets/home_new/img/youtube.svg" class="footer-svg"> Youtube</a></li>-->
+            <!--    </ul>-->
+            <!--</div>-->
+            <div class="col-md-2 mb-md-0 mb-3">
+                <ul class="list-unstyled">
+                    <li><a href="https://play.google.com/store/apps/details?id=com.wowadestinations.unistays" class="textDecoration"><img src="https://www.unistays.co//assets/home_new/img/playstore.png" class="app-link"></a></li>
+                    <li><a href="#!" class="textDecoration"> <img src="https://www.unistays.co//assets/home_new/img/appstore.png" class="app-link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Unistays © 2022. All rights reserved.
+        <a href="https://www.unistays.co/privacy-policy" class="textDecoration"> Privacy and Terms </a> | <a href="https://www.unistays.co/terms-conditions" class="textDecoration">Refunds / Cancellations </a> | <a href="https://www.unistays.co/contact" class="textDecoration">Contact us</a>
+    </div>
+</footer>
+<footer class="page-footer font-small blue pt-4 mob-nav">
+    <div class="container-fluid text-center text-md-left footer-style-mob">
+        <div class="row">
+
+            <!-- Grid column -->
+
+            <!--<div class="col-md-2">-->
+            <!--    <ul class="list-unstyled">-->
+            <!--        <li><a href="http://www.instagram.com/camphub.in"><img src="https://www.unistays.co//assets/home_new/img/instagram.svg" class="footer-svg"></a></li>-->
+            <!--        <li><a href="http://www.facebook.com/camphub.in"><img src="https://www.unistays.co//assets/home_new/img/facebook.svg" class="footer-svg"></a></li>-->
+            <!--        <li><a href="https://www.twitter.com/camphubindia"><img src="https://www.unistays.co//assets/home_new/img/youtube.svg" class="footer-svg"></a></li>-->
+            <!--    </ul>-->
+            <!--</div>-->
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="https://play.google.com/store/apps/details?id=com.wowadestinations.unistays"><img src="https://www.unistays.co//assets/home_new/img/playstore.png" class="app-link"></a></li>
+                    <li><a href="#!"><img src="https://www.unistays.co//assets/home_new/img/appstore.png" class="app-link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center">Unistays © 2022. All rights reserved.<br> <a href="https://www.unistays.co/privacy-policy"> Privacy and Terms </a> | <a href="https://www.unistays.co/terms-conditions">Refunds/Cancellations </a> | <a href="https://www.unistays.co/contact"> Contact us </a></div>
+</footer>
+
+</main>
+</div>
+<div id="toTop"></div>
+
+
+<script src="https://www.unistays.co//assets/home_new/js/jquery.min.js"></script>
+
+<script src="https://www.unistays.co//assets/home_new/js/slick.min.js"></script>
+<script src="https://www.unistays.co//assets/home_new/js/popper.min.js"></script>
+<script src="https://www.unistays.co//assets/home_new/js/readmore.js"></script>
+<script src="https://www.unistays.co/common/new_front_ui/js/common_scripts.js"></script>
+<script src="https://www.unistays.co/common/new_front_ui/js/main.js"></script>
+<script src="https://www.unistays.co/common/new_front_ui/js/handlebar.js"></script>
+<script src="https://www.unistays.co//assets/home_new/js/scripts.js"></script>
+<script>
+    var csrfName = 'ci_csrf_token';
+    var csrfHash = '';
+    var site_url =  'https://www.unistays.co/';
+</script>
+
+<!-- DATEPICKER  -->
+<!-- OLD COMMENTED -->
+<script src="https://www.unistays.co/common/new_front_ui/js/moment.min.js"></script>
+<script src="https://www.unistays.co/common/new_front_ui/js/daterangepicker.js"></script>
+<script src="https://www.unistays.co/public/js/plugin/validation/validate.min.js"></script>
+<link href="https://www.unistays.co/public/js/plugin/intlTelInput/intlTelInput.css" rel="stylesheet" type="text/css"/>
+<script src="https://www.unistays.co/public/js/plugin/intlTelInput/intlTelInput.min.js" type="text/javascript"></script>
+
+    <script src="https://www.unistays.co/public/js/page/login.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<!-- OLD COMMENTED -->
+<style>
+    #page {
+	margin-top: -94px;
+}
+.readMoreBtn{
+    color:#19a260;
+}
+.added_wishlist {
+	color: red;
+}
+.intl-tel-input{
+    width: 100%;
+}
+.intl-tel-input .flag-container{
+    display:none;
+}
+</style>
+
+<script>
+  //The loader script
+  $(window).on('load', function () {
+    $('.header-nav-bar').show();
+    $('#loading').hide();
+  });
+ $(document).ready(function() {
+     
+     //Review popup commented for now
+     /* $.ajax({url: 'https://www.unistays.co/api/user/check_review', success: function(result){
+          
+          var data = JSON.parse(result);
+          if(data.status == 1){
+              
+              review(data.campId, data.bookingid, data.campname);
+          }
+          
+      }});*/
+     
+ });
+        $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('back');
+            } else {
+                $('.navbar').removeClass('back');
+            }
+        });
+    });
+    </script>
+
+<script type="text/javascript">
+            $(document).on("click",".unset_wishlist",function(){
+               var wishlist_id = $(this).data('wishlist');
+
+               $.ajax({
+                    url: "https://www.unistays.co/api/user/wishlist-remove?WishlistId="+wishlist_id,
+                    dataType: "json",
+                    beforeSend: function( xhr ) {
+                     
+                    }
+                    }).done(function( data )
+                    {
+                        
+                       if(data.status == true) { window.location.reload(); }
+                       if(data.unatorized) { window.location.href= 'https://www.unistays.co//404.php';}
+                    });
+          });
+          
+    function userWishlist(userId) {
+        //alert(cCityName);
+        $.ajax({
+            url: "https://www.unistays.co/api/user/wishlist",
+            dataType: "json",
+            beforeSend: function(xhr) {
+                //console.log('fetchingData');
+
+            }
+        }).done(function(data) {
+            //consolelog(data.items);
+            $.each(data.items, function(index, value) {
+                //console.log(value);
+                campId = value.nCampId;
+                $('.wish_camp_' + campId).addClass('added_wishlist unset_wishlist');
+                $('.wish_camp_' + campId).removeClass('add_wishlist');
+                const article = document.querySelector('.wish_camp_' + campId).dataset.wishlist=value.wishlist_id;
+                
+            });
+        });
+    }
+
+   
+    function cancelBooking(bookingId) {
+        
+        
+
+
+         mesage = 'Are you sure want to cancel this booking' ;
+        $.confirm({
+            title: 'Booking Cancellation',
+            content: mesage,
+            icon: 'glyphicon glyphicon-heart',
+            type: 'green',
+            typeAnimated: true,
+            buttons: {
+                Cancel: function () {
+                 $( ".jconfirm" ).css('display','none'); 
+                },
+                Ok: function () {
+                  
+        $.ajax({
+            url: "https://www.unistays.co/api/camp/cancel_booking/" + bookingId,
+            dataType: "json",
+            beforeSend: function(xhr) {
+                //console.log('fetchingData');
+
+          if(document.getElementById("cnb")){
+               LoadingHtml = '<i class="fa fa-spinner fa-pulse fa-3x fa-fw" style="font-size: 21px;"></i>';
+                document.getElementById("cnb").innerHTML = LoadingHtml;
+                document.getElementById("cnb").disabled = true;
+          }
+            $('.cancelBtn').attr("disabled", true);
+
+                
+            }
+        }).done(function(data) {
+            mesage = 'Your booking is cancelled. We will get in touch with you for further assistance';
+            $.confirm({
+                title: 'Booking Cancelled',
+                content: mesage,
+                icon: 'glyphicon glyphicon-heart',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function() {
+                        window.location.replace("https://www.unistays.co/my_bookings");
+                    }
+                }
+            });
+        });
+                }
+            }
+        });
+    
+    }
+        
+        
+</script>
+<script>
+
+
+function review(cid, bid, rhead, image){
+    
+    $('#rcamp_id').val(cid);
+    $('#rbooking_id').val(bid);
+    $('#rhead').html('Rate '+rhead);
+    $('#modalForm').modal('show');
+    $('#campname').html(rhead);
+    $('#imagesrc').attr('src', image);
+    
+}
+    $(document).ready(function() {
+      
+        $("#camp-review").submit(function(e) {
+            e.preventDefault();
+            
+            var datastring = $("#camp-review").serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "https://www.unistays.co/api/review",
+                    data: datastring,
+                    dataType: "json",
+                    beforeSend: function(xhr) {
+                        //                console.log('fetchingData');
+                    }
+
+                }).done(function(data) {
+                    
+                     alert('Review submitted');
+                     $('#modalForm').modal('hide');
+                });
+                    
+           
+            
+        });
+        
+         $(document).on("click",".unset_wishlist",function(){
+               var wishlist_id = $(this).data('wid');
+               
+               $.ajax({
+                    url: "https://www.unistays.co/api/user/wishlist-remove?WishlistId="+wishlist_id,
+                    dataType: "json",
+                    beforeSend: function( xhr ) {
+                     
+                    }
+                    }).done(function( data )
+                    {
+                        
+                       if(data.status == true) { window.location.reload(); }
+                       if(data.unatorized) { window.location.href= 'https://www.unistays.co//404.php';}
+                    });
+          });
+          
+
+          
+        $("#hostyour-camp-form").submit(function(e) {
+            e.preventDefault();
+           
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var mobile = $('#mobile').val();
+            var description = $('#description').val();
+            var flag = 0;
+            $(".error").remove();
+            if (name.length < 1) {
+                $('#name').after('<span class="error text-danger">Name required</span>');
+                flag = 1;
+            }
+            if (mobile.length < 10) {
+                $('#mobile').after('<span class="error text-danger">Phone number required</span>');
+                flag = 1;
+            }
+            if (description.length < 1) {
+                $('#description').after('<span class="error text-danger">Description required</span>');
+                flag = 1;
+            }
+            if (email.length < 1) {
+                $('#email').after('<span class="error text-danger">Email required</span>');
+                flag = 1;
+            }
+           
+            if (flag == 0) {
+
+                var datastring = $("#hostyour-camp-form").serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "https://www.unistays.co/CampHosting",
+                    data: datastring,
+                    dataType: "json",
+                    beforeSend: function(xhr) {
+                        //                console.log('fetchingData');
+                    }
+
+                }).done(function(data) {
+                    if (data.send == 1) {
+                        $.confirm({
+                            title: 'Success',
+                            content: 'Camp Hosted Successfully',
+                            icon: 'glyphicon glyphicon-heart',
+                            type: 'green',
+                            typeAnimated: true,
+                            buttons: {
+                                close: function() {
+                                    window.location.replace("https://www.unistays.co/host_your_camp");
+                                }
+                            }
+                        });
+                    } else if (data.send == 2) {
+                        $.confirm({
+                            title: 'Faild',
+                            content: 'Something Error Occured. Please Try Later',
+                            icon: 'glyphicon glyphicon-heart',
+                            type: 'red',
+                            typeAnimated: true,
+                            buttons: {
+                                close: function() {
+                                    window.location.replace("https://www.unistays.co/host_your_camp");
+                                }
+                            }
+                        });
+                    }
+
+                });
+
+            }
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.js"></script>
+ <script>
+        var options = {
+            url: "https://www.unistays.co/api/city/get",
+            getValue: "name",
+            list: {
+                match: {
+                    enabled: true
+                },
+                onClickEvent: function() {
+                    //var selectedItemValue = $(".campCity").getSelectedItemData().name;
+                    //$(".serch_location").val(selectedItemValue).trigger("change");
+                    $('#form_search').submit();
+                },
+                onKeyEnterEvent: function() {
+                    $(".serch_location").val("").trigger("change");
+                },
+                onHideListEvent: function() {
+                    getTrendingCamps();
+                }
+            },
+            theme: "square"
+        };
+
+    $(".campCity").easyAutocomplete(options);
+    // Quick fix done by Arif
+    // The mobile popup is not working fine
+    // Duplicatingscript with new class for mobile
+    var options = {
+            url: "https://www.unistays.co/api/city/get",
+            getValue: "name",
+            list: {
+                match: {
+                    enabled: true
+                },
+                onClickEvent: function() {
+                    var selectedItemValue = $(".campCityMobile").getSelectedItemData().name;
+                    var actionUrl = $('#form_search').attr('action');
+                    window.location.href = actionUrl+'?serch_location='+selectedItemValue;
+                },
+                onKeyEnterEvent: function() {
+                    $(".serch_location_mobile").val("").trigger("change");
+                },
+                onHideListEvent: function() {
+                    getTrendingCamps();
+                }
+            },
+            theme: "square"
+        };
+
+    $(".campCityMobile").easyAutocomplete(options);
+    // Quick fix ends here
+    
+    var options = {
+            url: "https://www.unistays.co/api/city/get",
+            getValue: "name",
+            list: {
+                match: {
+                    enabled: true
+                },
+                onClickEvent: function() {
+                    //var selectedItemValue = $(".campCity").getSelectedItemData().name;
+                    //$(".serch_location4").val(selectedItemValue).trigger("change");
+                    $('#form_search_top').submit();
+                },
+                onKeyEnterEvent: function() {
+                    $(".serch_location4").val("").trigger("change");
+                },
+                onHideListEvent: function() {
+                    getTrendingCamps();
+                }
+            },
+            theme: "square"
+        };
+
+    $(".campCityTop").easyAutocomplete(options);
+</script>
+
+<script>
+    $(document).ready(function(){
+        
+        
+        $('#login-modal').on('hidden.bs.modal', function () {
+           window.location = window.location.href.split("&")[0];
+        })
+
+
+        
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            
+        }
+        
+
+        if(vars.includes("re_login")){
+            
+            $('#head_login').click();
+        }
+        
+    });
+    
+   $(window).on('load', function () {
+      //alert("Window Loaded");
+      console.log("123456")
+      $("#loading").fadeOut("slow");
+ });
+
+     
+//Equal if condition and else
+Handlebars.registerHelper('ifeq', function (a, b, options) {
+    if (a == b) { return options.fn(this); }
+    return options.inverse(this);
+});
+
+Handlebars.registerHelper('ifnoteq', function (a, b, options) {
+    if (a != b) { return options.fn(this); }
+    return options.inverse(this);
+});
+
+</script>
+
+<style>
+    
+    .comment-box {
+    padding: 5px
+}
+
+.comment-area textarea {
+    resize: none;
+    border: 1px solid #ff0000
+}
+
+
+
+.send {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000
+}
+
+.send:hover {
+    color: #fff;
+    background-color: #f50202;
+    border-color: #f50202
+}
+
+.ratingarea {
+   display: inline-flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+   
+    
+}
+
+.ratingarea>input {
+    display: none
+}
+
+.ratingarea>label {
+    position: relative;
+    width: 28px;
+    font-size: 35px;
+    color: orange;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.ratingarea>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.ratingarea>label:hover:before,
+.ratingarea>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.ratingarea>input:checked~label:before {
+    opacity: 1
+}
+
+.ratingarea:hover>input:checked~label:before {
+    opacity: 0.4
+}
+.checkb{
+    
+    width:unset !important;
+}
+</style>
+
+</body>
+
+</html><script>
+
+  
+
+        $(function() {
+            'use strict';
+            
+            Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+                return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+              });
+              
+            Handlebars.registerHelper('trimString', function(passedString) {
+                
+                  var theString = passedString.substring(0,25);
+                  if(passedString.length > 25 ){
+                      return new Handlebars.SafeString(theString+'...');
+                  } else {
+                      
+                       return new Handlebars.SafeString(theString);
+                  }
+                
+               
+            });
+            
+             Handlebars.registerHelper('round', function(passedString) {
+                
+                  return Math.round(passedString);
+               
+            });
+            
+        
+
+            $('input[name="dates"]').daterangepicker({
+                autoUpdateInput: false,
+                minDate: new Date(),
+                opens: 'left',
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            $('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+                $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+            });
+            $('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
+                $(this).val('');
+            });
+        });
+    </script>
+    <script>
+        $('#carouselExample').on('slide.bs.carousel', function(e) {
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 4;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    } else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+
+        $('#carouselExample').carousel({
+            interval: 2000
+        });
+
+        $(document).ready(function() {
+            /* show lightbox when clicking a thumbnail */
+            $('a.thumb').click(function(event) {
+                event.preventDefault();
+                var content = $('.modal-body');
+                content.empty();
+                var title = $(this).attr("title");
+                $('.modal-title').html(title);
+                content.html($(this).html());
+                $(".modal-profile").modal({
+                    show: true
+                });
+            });
+
+        });
+    </script>
+    <!-- INPUT QUANTITY  -->
+    <script src="https://www.unistays.co/common/new_front_ui/js/input_qty.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // Social Media Collapse
+            $('#sm-close').click(function() {
+                $('.s-media').addClass('sm-collapse');
+                $('#sm-open').delay(300).css('left', '0');
+            });
+
+            $('#sm-open').click(function() {
+                $('#sm-open').css('left', '-60px');
+                $('.s-media').removeClass('sm-collapse');
+
+            });
+
+            // END Click Function
+        }); // END DOCUMENT.Ready
+    </script>
+
+    <script>
+        initilizeSlick('slick-carousel');
+        function initilizeSlick(slickClass)
+        {
+            // Slick Sliders
+        $('.'+slickClass).each(function() {
+           // debugger;
+            var slider = $(this);
+            $(this).slick({
+                infinite: false,
+                dots: false,
+                arrows: true,
+               
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                centerPadding: '0',
+                autoplay: false,
+                autoplaySpeed: 1500,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='../img/icons/arrow-left.png'>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='../img/icons/arrow-right.png'>",
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        infinite: false,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        autoplay: false,
+                        arrows: true
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: false,
+                        arrows: false
+                    }
+                }]
+            });
+
+            $(this).closest('.slick-slider-area').find('.slick-prev').on("click", function() {
+                slider.slick('slickPrev');
+            });
+            $(this).closest('.slick-slider-area').find('.slick-next').on("click", function() {
+                slider.slick('slickNext');
+            });
+        });
+        }
+        function initilizeEventSlick(slickClass)
+        {
+            // Slick Sliders
+        $('.'+slickClass).each(function() {
+           // debugger;
+            var slider = $(this);
+            $(this).slick({
+                infinite: false,
+                dots: false,
+                arrows: false,
+                centerMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                centerPadding: '0',
+                autoplay: false,
+                autoplaySpeed: 1500,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow:5,
+                        slidesToScroll: 5,
+                        infinite:  false,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }]
+            });
+
+            $(this).closest('.slick-slider-area').find('.slick-prev').on("click", function() {
+                slider.slick('slickPrev');
+            });
+            $(this).closest('.slick-slider-area').find('.slick-next').on("click", function() {
+                slider.slick('slickNext');
+            });
+        });
+        }
+
+        initilizeAdventureSlick('slick-carousel');
+        function initilizeAdventureSlick(slickClass)
+        {
+            // Slick Sliders
+        $('.'+slickClass).each(function() {
+           // debugger;
+            var slider = $(this);
+            $(this).slick({
+                infinite: false,
+                dots: false,
+                arrows: false,
+                centerMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                centerPadding: '0',
+                autoplay: true,
+                autoplaySpeed: 1500,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow:5,
+                        slidesToScroll: 5,
+                        infinite: false,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }]
+            });
+
+            $(this).closest('.slick-slider-area').find('.slick-prev').on("click", function() {
+                slider.slick('slickPrev');
+            });
+            $(this).closest('.slick-slider-area').find('.slick-next').on("click", function() {
+                slider.slick('slickNext');
+            });
+        });
+        }
+
+        
+
+        function changesocialiconwidth()
+        {
+            windowWidth = $(window).width();
+            socialIconWidth = $('.social-links').width();
+            socialHeight = $('.social-links').height()/5;
+            leftMove = (windowWidth - socialIconWidth)/2;
+            footerHeight = $('.footer-container-section').height();
+            //alert(footerHeight);
+            $(".social-links").css("left", leftMove+"px");
+            //$(".social-links").css("bottom", footerHeight+"px");
+            //$(".social-links").css("margin-top", "-"+socialHeight+"px");
+        }
+
+        changesocialiconwidth();
+        getFeaturedCamps();
+        getTrendingCamps();
+        getAdventureCamps();
+        getGlambing();
+        getUnique();
+        getBoutiquehome();
+        getfarmhouse();
+        getHeritage();
+        getvilla();
+        featuredList();
+        
+        function featuredList()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camps/featured",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#featured-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#featuredList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-featuredlist');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        
+        function getUnique()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camp/list/3?featured=1",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#unique-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#uniqueCampsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-unique');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        
+        function getBoutiquehome()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camp/list/5?featured=1",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#boutiquehome-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#boutiquehomeCampsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-boutiquehome');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        
+        function getfarmhouse()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camp/list/6?featured=1",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#farmhouse-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#farmhouseCampsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-farmhouse');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        
+        function getvilla()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camp/list/4?featured=1",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#villa-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#villaCampsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-villa');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        
+        
+        
+        function getHeritage()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camp/list/7?featured=1",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#heritage-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#heritageCampsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-heritage');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        
+        function getFeaturedCamps()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camps/get?featured=1",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#expressions-template").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#featuredCampsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-featured');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        function getTrendingCamps()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/events/featured",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                if(data.length>0) 
+                {
+                    var theTemplateScript = $("#trending-events-template").html();
+                    var theTemplate = Handlebars.compile(theTemplateScript);
+                    var theCompiledHtml = theTemplate(data);
+                    $('#trendingCampsList').html(theCompiledHtml);
+                        initilizeEventSlick('slick-carousel-trending');
+                    $('[data-toggle="tooltip"]').tooltip();
+                } else {
+                    $('#home-events').hide();
+                }
+                //userWishlist();
+          });
+        }
+
+        function getAdventureCamps() 
+        {  
+            $.ajax({
+              url: "https://www.unistays.co/api/events/adventure",
+              dataType: 'html',
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript  = $("#trending-adventure-template").html();
+                var theTemplate        = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml    = theTemplate(data);
+                $('#trendingAdventureList').html(theCompiledHtml);
+                    initilizeAdventureSlick('home-adventure-carousel');
+                $('[data-toggle="tooltip"]').tooltip();
+                //userWishlist();
+          });
+        }
+
+        function getGlambing()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camps/getGlambing?featured=1", 
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                //console.log(data);
+                var count = data['resultsCount'];
+                var theTemplateScript = $("#glambing-template").html();
+                var theTemplate       = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml   = theTemplate(data['results']);
+                $('#glambingsList').html(theCompiledHtml);
+                    initilizeSlick('slick-carousel-glambing');
+                 $('[data-toggle="tooltip"]').tooltip();
+                 //userWishlist();
+          });
+        }
+        //getBlogs();
+        getPopularLocations();
+        getactivities();
+        getaCampSpcl();
+        getEventPackages();
+        getEventAdventures();
+        function getBlogs()
+        {
+          var limit = 4;
+          if($( window ).width() <= 700)
+          {
+            limit = 2;
+          }
+            $.ajax({
+              url: "https://www.unistays.co/api/blogs/get?limit="+limit,
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                //console.log(data);
+                var theTemplateScript = $("#blogScript").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#blogContainer').html(theCompiledHtml);
+                   // initilizeSlick('slick-carousel-trending');
+          });
+        }
+         function getactivities()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camp/activities",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#homeActivityScript").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#homeActivity').html(theCompiledHtml);
+                   // initilizeSlick('slick-carousel-trending');
+          });
+        }
+         function getaCampSpcl()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/camps/spicial",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+                //console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#campSpclScript").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#campSpclList').html(theCompiledHtml);
+                   // initilizeSlick('slick-carousel-trending');
+          });
+        }
+
+        function getPopularLocations()
+        {
+            $.ajax({
+              url: "https://www.unistays.co/api/locations/popular",
+              dataType: "json",
+              beforeSend: function( xhr ) {
+               // console.log('fetchingData');
+              }
+            }).done(function( data ) {
+                console.log(data);
+                var theTemplateScript = $("#popLocationScript").html();
+                var theTemplate = Handlebars.compile(theTemplateScript);
+                var theCompiledHtml = theTemplate(data);
+                $('#popLocation').html(theCompiledHtml);
+                   // initilizeSlick('slick-carousel-trending');
+          });
+        }
+
+
+
+    function getEventPackages()
+    {   
+        var event_type = '3';
+        $.ajax({
+          url: "https://www.unistays.co/api/events/get_event_packages",  
+          dataType: "html",
+          data:{event_type: event_type, data_type:"html"},
+
+          beforeSend: function( xhr ) {
+          }
+        }).done(function( data ) {
+          $('#package-module-append').html(data);
+      });
+    }
+
+    function getEventAdventures()
+    {   
+        var event_type = '2';
+        $.ajax({
+          url: "https://www.unistays.co/api/events/get_event_adventures",
+          dataType: "html",
+          data:{event_type: event_type, data_type:"html"},
+          beforeSend: function( xhr ) {
+          }
+        }).done(function( data ) {
+          $('#adventure-module-append').html(data);
+      });
+    }
+
+    $(document).ready(function(){
+    $(document).on("click",".add_wishlist",function() {
+      var dataid = $(this).data('wid');
+       var thisW =$(this);
+      $.ajax({
+              url: "https://www.unistays.co//api/camp/wishlist?campId="+dataid,
+              dataType: "json",
+              beforeSend: function( xhr ) { 
+              }
+            }).done(function( data ) {
+                if(data.is_logged == 0)
+                {    
+                    //$('#myModal').modal('show');
+                    //alert('please login to continnue');
+                    $.confirm({
+                        title: 'Login',
+                        content: 'Please login to continue',
+                        icon: 'glyphicon glyphicon-heart',
+                        type: 'red',
+                        typeAnimated: true,
+                         buttons: {
+                         close: function () {
+                         //window.location.replace("https://www.unistays.co/login");
+                         $('#login-modal').modal('show');
+                        }
+                      }
+                    });
+                }
+                else if(data.is_logged == 1 && data.wishlist == 1)
+                {   
+                    thisW.addClass('added_wishlist');
+                    //alert('successfully added to the wishlist');
+                    $.confirm({
+                        title: 'Wishlist',
+                        content: 'Successfully added to the wishlist',
+                        icon: 'glyphicon glyphicon-heart',
+                        type: 'green',
+                        typeAnimated: true,
+                        buttons: {
+                            close: function () {
+                            }
+                        }
+                    });
+                }
+                else if(data.is_logged == 1 && data.wishlist == 2)
+                {
+                    thisW.addClass('added_wishlist');
+                     //alert('you have allready added to the wishlist');
+                     $.confirm({
+                        title: 'Wishlist',
+                        content: 'You have allready added to the wishlist',
+                        icon: 'glyphicon glyphicon-heart',
+                        type: 'green',
+                        typeAnimated: true,
+                        buttons: {
+                            close: function () {
+                            }
+                        }
+                    });
+                }
+                    
+               // console.log(data);
+          });
+    });
+    
+}); 
